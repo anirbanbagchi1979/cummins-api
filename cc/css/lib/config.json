@@ -1,0 +1,9 @@
+{
+  "xmlType": {
+    "Content-Type": "application/xml;charset=UTF-8",
+    "Accept": "application/xml"
+  },
+  "jsonType": {"content-type": "application/json"},
+  "collection": "css",
+  "mock": "mock.json"
+}

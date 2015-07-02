@@ -1,0 +1,54 @@
+#%RAML 0.8
+title: css
+version: 1.0
+baseUri: /mobile/custom/css
+protocols: [HTTPS]
+/jobs:
+  get:
+    protocols: [HTTPS]
+  /{id}:
+    uriParameters:
+      id:
+        displayName: id
+        type: string
+        required: true
+    get:
+/user:
+  get:
+    protocols: [HTTPS]
+  /jobs:
+    get:
+/news:
+  get:
+    protocols: [HTTPS]
+/workOrders:
+  description: |
+    List of work orders
+    
+  get:
+    description: |
+      List of work orders
+      
+    protocols: [HTTPS]
+  post:
+    description: |
+      Create a work order
+      
+    protocols: [HTTPS]
+  /{workOrderId}:
+    description: |
+      A work order
+      
+    uriParameters:
+      workOrderId:
+        displayName: work order id
+        type: string
+        required: true
+    get:
+      description: |
+        Get a work order
+        
+    put:
+      description: |
+        Update a work order
+        

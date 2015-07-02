@@ -1,0 +1,270 @@
+{
+  "jobs": [
+    {
+      "customer": "Quadtechno",
+      "workOrder": "212146-235",
+      "assignedTo": "Betty Dunn",
+      "jobType": "repair",
+      "status": "0"
+    },
+    {
+      "customer": "Dorgreen",
+      "workOrder": "493313-412",
+      "assignedTo": "Debra Gardner",
+      "jobType": "maintenance",
+      "status": "1",
+      "completed": "30"
+    },
+    {
+      "customer": "Technolex",
+      "workOrder": "3235259-328",
+      "assignedTo": "Jeremy Robinson",
+      "jobType": "repair",
+      "status": "2"
+    },
+    {
+      "customer": "Zunity",
+      "workOrder": "72684-913",
+      "assignedTo": "Anna Daniels",
+      "jobType": "repair",
+      "status": "3"
+    },
+    {
+      "customer": "Alphazoom",
+      "workOrder": "458712-854",
+      "assignedTo": "Anthony Oliver",
+      "jobType": "repair",
+      "status": "4"
+    },
+    {
+      "customer": "Lexholding",
+      "workOrder": "21458-854",
+      "assignedTo": "Eric Moreno",
+      "jobType": "repair",
+      "status": "NEW! Begin Diagnosis"
+    },
+    {
+      "customer": "Conecon",
+      "workOrder": "4987541-157",
+      "assignedTo": "Eric Moreno",
+      "jobType": "maintenance",
+      "status": "In Repair"
+    },
+    {
+      "customer": "Lamhouse",
+      "workOrder": "874595-456",
+      "assignedTo": "Eric Moreno",
+      "jobType": "repair",
+      "status": "Pending customer approval"
+    },
+    {
+      "customer": "Treecan",
+      "workOrder": "654105-716",
+      "assignedTo": "Eric Moreno",
+      "jobType": "repair",
+      "status": "Awaiting part"
+    },
+    {
+      "customer": "Stattechno",
+      "workOrder": "741258-456",
+      "assignedTo": "Eric Moreno",
+      "jobType": "repair",
+      "status": "Customer Approval Repair"
+    }
+  ],
+  "news": [
+    {
+      "title": "Factory visits your state dealers",
+      "date": "2015-08-03 13:05",
+      "image": "http:....",
+      "link": "http:....."
+    },
+    {
+      "title": "Register now for your state Event",
+      "date": "2015-08-03 13:05",
+      "image": "http:....",
+      "link": "http:....."
+    },
+    {
+      "title": "Campaign for Zunity Series Releasing in July",
+      "date": "2015-08-03 13:05",
+      "image": "http:....",
+      "link": "http:....."
+    }
+  ],
+  "workOrders": [
+    {
+      "workOrder": "WO9874745",
+      "customer": "Zunity",
+      "jobType": "Repair",
+      "status": "Awaiting Part",
+      "assignedTo": "Eric Moreno",
+      "customerComplaint": "My unit is showing error codes",
+      "esn": 32949117,
+      "mileage": 624204,
+      "faultCodes": [
+        {
+          "status": "Active",
+          "priority": true,
+          "faultCode": 212146235,
+          "lastOccurrence": "2015-06-30T12:09:10Z",
+          "count": 45,
+          "lamp": "Amber",
+          "description": "Motor failure"
+        },
+        {
+          "status": "Active",
+          "priority": true,
+          "faultCode": 493313412,
+          "lastOccurrence": "2015-06-30T12:09:10Z",
+          "count": 2,
+          "lamp": "Amber",
+          "description": "Power supply failure"
+        },
+        {
+          "status": "Active",
+          "priority": true,
+          "faultCode": 323050328,
+          "lastOccurrence": "2015-06-30T12:09:10Z",
+          "count": 33,
+          "lamp": "Amber",
+          "description": "Motor failure"
+        },
+        {
+          "status": "Inactive",
+          "priority": true,
+          "faultCode": 726481913,
+          "lastOccurrence": "2015-06-30T12:09:10Z",
+          "count": 17,
+          "lamp": "Amber",
+          "description": "Motor failure"
+        },
+        {
+          "status": "Inactive",
+          "priority": true,
+          "faultCode": 439183210,
+          "lastOccurrence": "2015-06-30T12:09:10Z",
+          "count": 8,
+          "lamp": "Amber",
+          "description": "Motor failure"
+        }
+      ],
+      "dsid": "1234",
+      "edsSolutions": [
+        {
+          "text": "EDS Solution 1",
+          "tried": true,
+          "complete": false,
+          "date": "2015-06-30T12:09:10Z"
+        },
+        {
+          "text": "EDS Solution 2",
+          "tried": true,
+          "complete": false,
+          "date": "2015-06-30T12:09:10Z"
+        },
+        {
+          "text": "EDS Solution 3",
+          "tried": true,
+          "complete": false,
+          "date": "2015-06-30T12:09:10Z"
+        },
+        {
+          "text": "EDS Solution 4",
+          "tried": true,
+          "complete": true,
+          "date": "2015-06-30T12:09:10Z"
+        }
+      ]
+    },
+    {
+      "workOrder": "WO9887872",
+      "serviceWriter": "Helen Mills",
+      "customer": "Lexiholding",
+      "jobType": "Maintenance",
+      "status": "New! Begin Diagnosis",
+      "assignedTo": "Angie McGaha",
+      "customerComplaint": {
+        "customerStatedFaultCodes": [
+          "Active: 3205,2156",
+          "Inactive: Unknown"
+        ],
+        "generalSymptoms": "My unit is showing error codes",
+        "comments": "The unit was serviced recently and has completed 200 hours of service since then",
+        "failureDate": "2015-06-30T12:09:10Z",
+        "failurePoint": 624204
+      },
+      "esn": 32949117,
+      "mileage": 624204,
+      "customers": {
+        "name": "Lexiholding",
+        "contact": "Eugene Cruz",
+        "phone": 2142153898,
+        "altPhone": 2142153898,
+        "driver": "Eugene Cruz",
+        "driversPhone": 2142153898
+      },
+      "unitEngines": {
+        "unit": "0123",
+        "makeModel": "Kenworth / Model Name",
+        "unitLocation": "Intake Lot",
+        "esn": 32949117,
+        "vin": 43823205937,
+        "year": 2014,
+        "mileage": 634204,
+        "app": "Automotive-Industrauin (0000)"
+      }
+    }
+  ],
+  "newOrderNums": [
+    "WO9887872",
+    "WO7363638",
+    "WO8744744",
+    "WO9484742"
+  ],
+  "technicians": [
+    "Eric Moreno",
+    "Angie McGaha"
+  ],
+  "jobTypes": [
+    "Repair",
+    "Maintenance"
+  ],
+  "customers": [
+    {
+      "name": "",
+      "contact": "Eugene Cruz",
+      "phone": 2142153898,
+      "altPhone": 2142153898,
+      "driver": "Eugene Cruz",
+      "driversPhone": 2142153898
+    }
+  ],
+  "unitEngines": [
+    {
+      "unit": "0123",
+      "makeModel": "Kenworth / Model Name",
+      "unitLocation": "Intake Lot",
+      "esn": "",
+      "vin": 43823205937,
+      "year": 2014,
+      "mileage": 634204,
+      "app": "Automotive-Industrauin (0000)"
+    }
+  ],
+  "customerComplaints": [
+    {
+      "customerStatedFaultCodes": [
+        "Active: 3205,2156",
+        "Inactive: Unknown"
+      ],
+      "generalSymptoms": [
+        "Leaks coming from the real of the generator",
+        "Has vibration using full load"
+      ],
+      "comments": "The unit was serviced recently and has completed 200 hours of service since then",
+      "failureDate": "2015-06-30T12:09:10Z",
+      "failurePoint": "200000"
+    }
+  ]
+}
