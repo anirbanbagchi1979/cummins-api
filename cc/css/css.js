@@ -151,4 +151,59 @@ module.exports = function (service) {
             res.end();
         });
     });
+    service.post('/mobile/custom/css/notify', function(req,res) {
+
+        var sdkInstance = req.oracleMobile;
+        var building = req.body.building;
+        var floor = req.body.floor;
+        var room = req.body.room;
+        var notification = {message: 'Notification Sent'};
+
+        // Handler for the request that gets the authorization token.
+        // The authorization token is passed in the body.
+        var handler = function (error, response, body) {
+            if (error) {
+                console.error('AppId Error: ' + error);
+                res.send(500, error);
+            } else {
+
+                // Handler that actually sends the notification.
+                var notificationHandler = function (error, response, body) {
+                    if (error) {
+                        console.error('Notification failed');
+
+                    } else {
+                        console.info('Notification sent');
+                        res.send(200, notification);
+                    }
+                };
+                // Note that the authorization token is set
+                // in the Authorization header.
+                var optionsList = {
+                    uri: '/mobile/system/notifications/notifications/',
+                    json: notification,
+                    headers: {'Authorization': body}
+                };
+
+                sdkInstance.rest.post(optionsList, notificationHandler);
+            }
+        };
+
+        // Request for a token includes the mobile backend name and
+        // version along with the MOBILE_NOTIFICATION_APPID user name,
+        // which is the internal user who has permission to send
+        // notifications.
+        var request = {
+            name: 'cummins',
+            version: '1.0',
+            username: 'MOBILE_NOTIFICATION_APPID'};
+        var optionsList = {
+            uri: '/mobile/platform/ums/tokens/',
+            json: request};
+
+        // Get token for notification.
+        // The handler we are passing in not only extracts the token
+        // but triggers the call to send the notification.
+        sdkInstance.rest.post(optionsList, handler);
+    });
 };
